@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    News Articles
+{% endblock %}
+
+{% block content %}
+<section>
+    <h1>News Articles</h1>
+
+    {% for News_article in Articles %}
+        <article class="News_articles">
+            <h2>{{News_article.title}}</h2>
+            <td style="text-align: left;">
+                <p>{{ News_article.summary }}</p>
+                <p>Published? {{ News_article.published }}</p>
+                <p>Published date: {{ News_article.pub_date }}</p>
+                <p></p>
+            </td>
+        </article>
+    {% endfor %}
+</section>
+{% endblock %}
