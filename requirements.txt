@@ -1,0 +1,20 @@
+## First we need to install some libreries needed to download and store the news articles.
+## I have both Python2 and Python3 installed in my machine. I will use the package installer pip. I'm running this in python 3.10.9 on a Mac machine.
+## We will install the following libraries by writing the line: python3 pip3 install -r requirements.txt by opening a terminal window located in the 'Myproject' folder.
+## I recommend activating a virtual environment by writing the line: source .venv/bin/activate  before installing libraries or running the python archives associated to the app.
+
+
+## To begin with, we install the scraparazzie library, we'll use this one to get relevant news articles URLs according to a Query.
+scraparazzie
+
+## Next, we install newspaper3k, used to extract specific information form a given URL.
+## We need to install lxml_html_clean and nltk as well, since newspaper3k uses both of these libraries to work.
+## We use datetime to work with news articles' published dates.
+newspaper3k
+lxml_html_clean
+nltk
+datetime
+
+## Finally, in order to manage the database using the Django framework and built the rest API points we install the following libraries
+Django
+djangorestframework
