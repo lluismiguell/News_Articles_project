@@ -11,6 +11,7 @@ class News_Article(models.Model):
     pub_date = models.DateField()
     category = models.CharField(max_length=500)
     author = models.TextField()
+    link = models.TextField()
 
     def __str__(self):
         return self.title
