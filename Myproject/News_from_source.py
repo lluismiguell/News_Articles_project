@@ -111,7 +111,7 @@ for url in range(len(new_dict_urls)):
             pub_date = art.publish_date
         
         ## Finally we store the News Article's relevant information in our dictionary for future storage in our Django Database
-        dict.append({'author':au_bio.text, 'title': art.title, 'summary': art.summary, 'text': art.text, 'html': art.html, 'category': new_dict_cats[url], 'published': pub, 'published date': pub_date, 'url': new_dict_urls[url]})
+        dict.append({'author':au_bio.text[7:].replace("\n\n", " "), 'title': art.title, 'summary': art.summary, 'text': art.text, 'html': art.html, 'category': new_dict_cats[url], 'published': pub, 'published date': pub_date, 'url': new_dict_urls[url]})
         Author_name.append({'author':art.authors[0]})
     except :
         pass
