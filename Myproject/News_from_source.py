@@ -1,5 +1,5 @@
 ## News articles web scraping query code, by: Luis Miguel Leon Gil
-## SSL Troubleshoot for my MacOS computer that does not have updated SSL certificates, you can comment lines form 3 to 11 if you have updated SSL certificates.
+## SSL Troubleshoot for my MacOS computer that does not have updated SSL certificates, you can comment lines form 5 to 12 if you have updated SSL certificates.
 import nltk
 import ssl
 try:
